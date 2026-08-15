@@ -1,0 +1,116 @@
+/* Importando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Reset básico e estilo do fundo */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9e3d6; 
+    font-family: 'Inter', sans-serif;
+}
+
+/* O quadrado branco principal (aumentado) */
+
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 48px 40px; /* Espaçamento interno aumentado */
+    border-radius: 16px; /* Cantos um pouco mais arredondados */
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06); 
+    box-sizing: border-box;
+}
+/* Título (Aumentado) */
+.card h2 {
+    font-family: 'Lora', serif;
+    color: #435b32; 
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 28px; /* Aumentado de 24px para 28px */
+    font-weight: 700;
+}
+
+/* Grupo de labels e inputs */
+.input-group {
+    margin-bottom: 18px;
+}
+
+/* Rótulos dos campos (Aumentados) */
+.input-group label {
+    display: block;
+    font-size: 14px; /* Aumentado de 12px para 14px */
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+/* Caixas de texto (Aumentadas) */
+.input-group input {
+    width: 100%;
+    padding: 14px; /* Aumentado para o campo ficar mais alto */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px; /* Texto digitado aumentado para 15px */
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: #435b32;
+}
+
+.input-group input::placeholder {
+    color: #999999;
+}
+
+/* Link de esqueci a senha (exclusivo da tela de Login) */
+.link-esqueci {
+    display: block;
+    font-size: 13px; /* Aumentado de 11px para 13px */
+    color: #718361; 
+    text-decoration: none;
+    margin-bottom: 22px;
+    margin-top: -4px;
+}
+
+/* Botão principal (Aumentado) */
+button {
+    width: 100%;
+    background-color: #435b32;
+    color: #ffffff;
+    padding: 14px; /* Aumentado o espaço interno do botão */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px; /* Texto do botão aumentado para 16px */
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.2s ease;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #344727;
+}
+
+/* Texto do rodapé (Aumentado) */
+.footer-text {
+    text-align: center;
+    font-size: 14px; /* Aumentado de 12px para 14px */
+    color: #888888;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.footer-text a {
+    color: #435b32;
+    font-weight: 700;
+    text-decoration: none;
+}
