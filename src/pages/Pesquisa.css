@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+.pesquisa-container {
+  min-height: 100vh;
+  padding: 50px 8%;
+  background-color: #f5f8f2;
+}
+
+/* Título */
+
+.pesquisa-titulo {
+  text-align: center;
+  color: #315c38;
+  font-size: 36px;
+  margin: 20px 0 10px;
+}
+
+.pesquisa-subtitulo {
+  text-align: center;
+  color: #687568;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+/* Barra de pesquisa */
+
+.barra-pesquisa {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto 50px;
+
+  display: flex;
+
+  background-color: white;
+  border: 1px solid #ccd8c9;
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.barra-pesquisa input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  padding: 16px 20px;
+
+  font-size: 16px;
+}
+
+.barra-pesquisa button {
+  width: 60px;
+
+  border: none;
+
+  background-color: #4d7c52;
+  color: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.barra-pesquisa button:hover {
+  background-color: #3c643f;
+}
+
+/* Cards */
+
+.plantas-container {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  );
+
+  gap: 25px;
+}
+
+.planta-card {
+  background-color: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s;
+}
+
+.planta-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagem */
+
+.planta-imagem {
+  width: 100%;
+
+  height: 200px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* Informações */
+
+.planta-info {
+  padding: 20px;
+}
+
+.planta-info h2 {
+  margin: 0 0 10px;
+
+  color: #315c38;
+
+  font-size: 22px;
+}
+
+.planta-preco {
+  margin: 0;
+
+  color: #3f7747;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+/* Sem resultados */
+
+.sem-resultado {
+  width: 100%;
+
+  text-align: center;
+
+  color: #777;
+
+  font-size: 18px;
+}
